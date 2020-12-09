@@ -27,6 +27,7 @@ Because I ran out of room on the enclosure's panels. Between two FTDI headers, 5
 Bill Of Materials and part references are below. Note that the right-angle headers have to be a specific type to align with the panel PCBs - they need to have the plastic "end stopper" on the "business" side of the angle, not the side you solder to the PCB. Headers from [Pololu](https://www.pololu.com/product/967), [Sparkfun](https://www.sparkfun.com/products/553), and [Adafruit](https://www.adafruit.com/product/1540) are like this, as is the Mouser listing below. Most eBay etc listings are ***not*** like this, and will not align correctly. Other than that, parts listed below are simply the ones I used and can be substituted as needed. Chip sockets are not speficially listed; at very least, the EEPROM should be socketed.
 
 | Reference | Value | Mouser link |
+| --------- | ----- | ----------- |
 | BZ1 | Piezo buzzer | [TDK PS1240P02BT](https://www.mouser.com/ProductDetail/810-PS1240P02BT) |
 | C1, C2 | 1μF ceramic | [TDK FG18X5R1H105KRT06](https://www.mouser.com/ProductDetail/FG18X5R1H105KRT06) |
 | C3-C7 | 100nF ceramic | [KEMET C315C104M5U5TA7303](https://www.mouser.com/ProductDetail/C315C104M5U5TA7303) |
