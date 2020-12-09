@@ -12,7 +12,7 @@ VGA terminal stacked with SC131 computer
 Details about the terminal itself are covered by Marco's project (this remix largely just changes the form factor). For detailed information, see his [project page](https://github.com/maccasoft/propeller-vt100-terminal).
 
 ## Serial interfaces
-Connection to a computer is provided through a FTDI-style pin header, wired to the same pinout. Specifically, it is wired as a DTE (just like an FTDI dongle), so it can be wired directly to a DTE (like an SC131). A second *passthrough* port is provided to permit a PC connection to the same computer. This passthrough port is wired as a DTE, so FTDI cables can be connected directly. An AND gate mixes the terminal and passthrough connections together, so both can be used simultaneously. Transmitting from both at the same time with send gibberish; in testing this is relatively rare, and XMODEM at least will retransmit if this happens.
+Connection to a computer is provided through an FTDI-style pin header, wired to the same pinout. Specifically, it is wired as a DTE (just like an FTDI dongle), so it can be wired directly to a DTE (like an SC131). A second *passthrough* port is provided to permit a PC connection to the same computer. This passthrough port is wired as a DTE, so FTDI cables can be connected directly. An AND gate mixes the terminal and passthrough connections together, so both can be used simultaneously. Transmitting from both at the same time with send gibberish; in testing this is relatively rare, and XMODEM at least will retransmit if this happens.
 
 ## Usage
 This terminal lets you use your SC131 (or other retrocomputer) standalone, without dependency on another computer. In addition, a modern computer can be connected to the passthrough port as needed. This is useful for sending files over XMODEM, for example.
@@ -23,8 +23,11 @@ This terminal lets you use your SC131 (or other retrocomputer) standalone, witho
 ### Why are the plugs on the front?
 Because I ran out of room on the enclosure's panels. Between two FTDI headers, 5V in, reset, power switch, VGA, and USB, there wasn't even room left for a power LED. The serial ports are on the same side as the SC131 ones at least, so those can be connected together cleanly with a 6-wire "Dupont" cable.
 
+### Initial setup
+The parts specified are not pre-programmed; they will need to be programmed before use. Either a [Prop-Plug](https://www.mouser.com/ProductDetail/32201) can be used on the assembled board, or a [TL866](https://www.ebay.com/sch/i.html?_nkw=tl866ii+plus) can be used on the bare EEPROM. Instructions (and firmware) for programming can be found at the same [link]((https://github.com/maccasoft/propeller-vt100-terminal)) as above.
+
 ## Part selection
-Bill Of Materials and part references are below. Note that the right-angle headers have to be a specific type to align with the panel PCBs - they need to have the plastic "end stopper" on the "business" side of the angle, not the side you solder to the PCB. Headers from [Pololu](https://www.pololu.com/product/967), [Sparkfun](https://www.sparkfun.com/products/553), and [Adafruit](https://www.adafruit.com/product/1540) are like this, as is the Mouser listing below. Most eBay etc listings are ***not*** like this, and will not align correctly. Other than that, parts listed below are simply the ones I used and can be substituted as needed. Chip sockets are not speficially listed; at very least, the EEPROM should be socketed.
+Bill Of Materials and part references are below. Note that the right-angle headers have to be a specific type to align with the panel PCBs - they need to have the plastic "end stopper" on the "business" side of the angle, *not* the side you solder to the PCB. Headers from [Pololu](https://www.pololu.com/product/967), [Sparkfun](https://www.sparkfun.com/products/553), and [Adafruit](https://www.adafruit.com/product/1540) are like this, as is the Mouser listing below. Most eBay etc listings are ***not*** like this, and will not align correctly. Other than that, parts listed below are simply the ones I used, and can be substituted as needed. Chip sockets are *not* speficially listed; at very least, the EEPROM should be socketed.
 
 | Reference | Value | Mouser link |
 | --------- | ----- | ----------- |
@@ -52,3 +55,5 @@ Bill Of Materials and part references are below. Note that the right-angle heade
 | U3 | MCP1700 | [Microchip MCP1700-3302E/TO](https://www.mouser.com/ProductDetail/579-MCP1700-3302E-TO) |
 | U4 | 74HC08 | [TI SN74HC08AN](https://www.mouser.com/ProductDetail/595-SN74HC08AN) |
 | X1 | 5MHz HC-49 crystal | [ECS ECS-50-18-4XEN](https://www.mouser.com/ProductDetail/520-50-18-4XEN) |
+| Case | Hammond 1593N | [Hammond 1593NTBU](https://www.mouser.com/ProductDetail/546-1593NTBU) |
+| Screws | Hammond self-tapping | [Hammond 1593ATS](https://www.mouser.com/ProductDetail/546-1593ATS100) |
