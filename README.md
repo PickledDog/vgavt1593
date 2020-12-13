@@ -3,7 +3,7 @@
 ![Assembled VGA terminal](/img/assembled.jpg)
 
 ## Overview
-This is a remix of Marco Maccaferri's [VGA Serial Terminal](https://github.com/maccasoft/propeller-vt100-terminal) for RC2014. It is specifically adapted to be used with Stephen C Cousins' [SC131](https://smallcomputercentral.wordpress.com/sc131-z180-pocket-computer/) Z180 pocket computer. It fits into the same Hammond 1593N enclosure, making for a neat and tidy setup when combined with an SC131. Of course, it can be also be used with any other retrocomputer or device that expects a VT100-like terminal, connected over "TTL-Serial" raw RS232.
+This is a remix of Marco Maccaferri's [VGA Serial Terminal](https://github.com/maccasoft/propeller-vt100-terminal) for RC2014. It is specifically adapted to be used with Stephen C Cousins' [SC131](https://smallcomputercentral.wordpress.com/sc131-z180-pocket-computer/) Z180 pocket computer. It fits into the same Hammond 1593N enclosure, making for a neat and tidy setup when combined with an SC131. Of course, it can also be used with any other retrocomputer or device that expects a VT100-like terminal, connected over "TTL-Serial" raw RS232.
 
 ![Stacked with SC131](/img/stacked.jpg)
 VGA terminal stacked with SC131 computer
@@ -12,7 +12,7 @@ VGA terminal stacked with SC131 computer
 Details about the terminal itself are covered by Marco's project (this remix largely just changes the form factor). For detailed information, see his [project page](https://github.com/maccasoft/propeller-vt100-terminal).
 
 ## Serial interfaces
-Connection to a computer is provided through an FTDI-style pin header, wired to the same pinout. Specifically, it is wired as a DTE (just like an FTDI dongle), so it can be wired directly to a DCE (like an SC131). A second *passthrough* port is provided to permit a PC connection to the same computer. This passthrough port is wired as a DCE, so FTDI cables can be connected directly. An AND gate mixes the terminal and passthrough connections together, so both can be used simultaneously. Transmitting from both at the same time with send gibberish; in testing this is relatively rare, and XMODEM at least will retransmit if this happens.
+Connection to a computer is provided through an FTDI-style pin header, wired to the same pinout. Specifically, it is wired as a DTE (just like an FTDI dongle), so it can be wired directly to a DCE (like an SC131). A second *passthrough* port is provided to permit a PC connection to the same computer. This passthrough port is wired as a DCE, so FTDI cables can be connected directly. An AND gate mixes the terminal and passthrough connections together, so both can be used simultaneously. Transmitting from both at the same time will send gibberish; in testing this is relatively rare, and XMODEM at least will retransmit if this happens.
 
 ## Usage
 This terminal lets you use your SC131 (or other retrocomputer) standalone, without dependency on another computer. In addition, a modern computer can be connected to the passthrough port as needed. This is useful for sending files over XMODEM, for example.
@@ -39,7 +39,7 @@ The specified parts are just the ones I used, and can be substituted as needed -
 | C8 | 10μF electrolytic | 1 | [Nichicon UMA1E100MDD](https://www.mouser.com/ProductDetail/UMA1E100MDD) |
 | J1 | 5.5/2.1mm barrel socket | 1 | [CUI PJ-002A](https://www.mouser.com/ProductDetail/490-PJ-002A) |
 | J2 | 1x4 header | 1 | [Amphenol 10129378-904002BLF](https://www.mouser.com/ProductDetail/10129378-904002BLF) |
-| J3, J4 | 1x6 right-angle header | 2 | [Amphenol FCI 10129379-906003BLF](https://www.mouser.com/ProductDetail/10129379-906003BLF) |
+| J3, J4 | 1x6 right-angle header | 2 | [Amphenol 10129379-906003BLF](https://www.mouser.com/ProductDetail/10129379-906003BLF) |
 | J5 | USB A socket | 1 | [Amphenol FCI 87520-1110BLF](https://www.mouser.com/ProductDetail/649-87520-1110BLF) |
 | J6 | D-Sub HD-15 Female | 1 | [TE 2311763-1](https://www.mouser.com/ProductDetail/571-2311763-1) |
 | JP1 | 1x2 header | 1 | [Amphenol 10129378-902002BLF](https://www.mouser.com/ProductDetail/10129378-902002BLF) |
