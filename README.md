@@ -21,7 +21,7 @@ This terminal lets you use your SC131 (or other retrocomputer) standalone, witho
 5V power is received through a standard 5.5/2.1mm barrel jack connection, center positive. The device optionally sends power to the connected computer (selectable by a jumper on JP1 - this is expected by SC131). In most cases, JP1 should be left installed. Wall adapters in this voltage and configuration are common, or a USB to 5.5mm cable can be used (examples [here](https://www.ebay.com/sch/i.html?_nkw=usb+to+5.5mm)).
 
 ### Why are the plugs on the front?
-Because I ran out of room on the enclosure's panels. Between two FTDI headers, 5V in, reset, power switch, VGA, and USB, there wasn't even room left for a power LED. The serial ports are on the same side as the SC131 ones at least, so those can be connected together cleanly with a 6-wire "Dupont" cable.
+Because I ran out of room on the enclosure's panels. Between two FTDI headers, 5V in, reset, power switch, VGA, and USB, there wasn't even room left for a power LED. The serial ports are on the same side as the SC131 ones at least, so those can be connected together cleanly with a [6-pin Dupont cable](https://www.ebay.com/sch/i.html?_nkw=6+pin+dupont+cable).
 
 ### Initial setup
 The parts specified are not pre-programmed; they will need to be programmed before use. Either a [Prop-Plug](https://www.mouser.com/ProductDetail/32201) can be used on the assembled board, or a [TL866](https://www.ebay.com/sch/i.html?_nkw=tl866ii+plus) or [CH341](https://www.ebay.com/sch/i.html?_nkw=ch341a+programmer) can be used on the bare EEPROM. Instructions (and firmware) for programming can be found at the same [link](https://github.com/maccasoft/propeller-vt100-terminal) as above.
